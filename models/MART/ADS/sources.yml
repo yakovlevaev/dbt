@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: OWOX_ADS
+    tables:
+      - name: yandex_direct_AdCostData
+      - name: facebook_AdCostData
+      - name: my_target_OWOXAdCostData
+      - name: vk_OWOXAdCostData
+
+  - name: EXTERNAL_DATA_SOURCES
+    tables:
+      - name: YDX_ADS_legacy
+      - name: GOOGLE_ADS_legacy
