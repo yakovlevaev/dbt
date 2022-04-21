@@ -31,3 +31,25 @@ sources:
       - name: Keyword_6169350493
       - name: Keyword_6116221976
       - name: Keyword_6781394611
+
+  - name: UA_REPORTS
+    tables:
+      - name: RAW_EVENTS
+      - name: UA_TRAFIC_BIG
+      - name: USERS
+      - name: VISIT_QUALITY
+      - name: PAGE_VIEWS
+  
+  - name: ARCHIVE
+    tables:
+      - name: BOT_IDS
+    
+  - name: CALLTOUCH_ATRIBUTION
+    tables:
+      - name: CALLS_FULL_ATRIBS
+      - name: VISITKA_GAINS_TABLES
+  
+  - name: INFORMATION_SCHEMA
+    database: region-us
+    tables:
+      - name: JOBS_BY_PROJECT
