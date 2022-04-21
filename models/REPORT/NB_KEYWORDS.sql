@@ -30,7 +30,7 @@ SELECT
     SUM(matched_calls) AS matched_calls,
     SUM(sold_calls) AS sold_calls,
     SUM(cite_gains) AS cite_gains
-FROM {{ source('CALLTOUCH_ATRIBUTION', 'CALLS_FULL_ATRIBS') }}
+FROM {{ ref('CALLS_FULL_ATRIBS') }}
 GROUP BY 1
 ),
 
@@ -127,7 +127,7 @@ SELECT
     IFNULL(SUM(cite_gains), 0) as REVENUE,
     0 as CLICKS,
     0 as COSTS
-FROM {{ source('CALLTOUCH_ATRIBUTION', 'VISITKA_GAINS_TABLES') }}
+FROM {{ ref('VISITKA_GAINS') }}
 GROUP BY 1, 2, 3, 4, 5, 6, 7, 8, 9
 )
 

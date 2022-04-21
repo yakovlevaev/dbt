@@ -12,6 +12,7 @@ sources:
     tables:
       - name: YDX_ADS_legacy
       - name: GOOGLE_ADS_legacy
+      - name: CALLTOUCH_JOURNAL
 
   - name: Google_Ads
     tables:
@@ -40,16 +41,15 @@ sources:
       - name: VISIT_QUALITY
       - name: PAGE_VIEWS
   
+  - name: sheets
+    tables:
+      - name: NB_ALL_CALLS
+
   - name: ARCHIVE
     tables:
       - name: BOT_IDS
-    
-  - name: CALLTOUCH_ATRIBUTION
-    tables:
-      - name: CALLS_FULL_ATRIBS
-      - name: VISITKA_GAINS_TABLES
   
-  - name: INFORMATION_SCHEMA
-    database: region-us
-    tables:
-      - name: JOBS_BY_PROJECT
+ # - name: INFORMATION_SCHEMA
+ #   database: region-us
+ #   tables:
+ #     - name: JOBS_BY_PROJECT
