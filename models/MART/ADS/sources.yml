@@ -12,3 +12,22 @@ sources:
     tables:
       - name: YDX_ADS_legacy
       - name: GOOGLE_ADS_legacy
+
+  - name: Google_Ads
+    tables:
+      - name: AdBasicStats_4291182672
+      - name: AdBasicStats_6169350493
+      - name: AdBasicStats_6116221976
+      - name: AdBasicStats_6781394611
+      - name: CampaignBasicStats_4291182672
+      - name: CampaignBasicStats_6169350493
+      - name: CampaignBasicStats_6116221976
+      - name: CampaignBasicStats_6781394611
+      - name: Campaign_4291182672
+      - name: Campaign_6169350493
+      - name: Campaign_6116221976
+      - name: Campaign_6781394611
+      - name: Keyword_4291182672
+      - name: Keyword_6169350493
+      - name: Keyword_6116221976
+      - name: Keyword_6781394611
