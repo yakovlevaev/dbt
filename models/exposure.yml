@@ -1,0 +1,42 @@
+version: 2
+
+exposures: 
+  - name: Отчёт по Маркетингу - Общий
+    type: dashboard
+    url: https://datastudio.google.com/reporting/c7c1edb9-0dd1-4b9a-b324-95ab0050e7f5 
+    depends_on:
+      - ref('MARKETING_GENERAL')     
+    owner:
+      email: yakovlevaev@m2.ru
+
+  - name: Отчёт по Классифайду
+    type: dashboard
+    url: https://datastudio.google.com/reporting/c71cdbcd-9626-4157-a08a-88ebbc7fa32d 
+    depends_on:
+      - ref('MARKETING_GENERAL')     
+    owner:
+      email: yakovlevaev@m2.ru
+
+  - name: Отчёт по новостройкам
+    type: dashboard
+    url: https://datastudio.google.com/reporting/4f70b29c-c7b3-4c03-8ef4-ac5c3d0e40b5 
+    depends_on:
+      - ref('NB_KEYWORDS')     
+    owner:
+      email: yakovlevaev@m2.ru
+
+  - name: Отчет по B2B
+    type: dashboard
+    url: https://datastudio.google.com/reporting/4ff2a22a-0451-4451-a986-8d35e9fad3eb 
+    depends_on:
+      - ref('MARKETING_GENERAL')     
+    owner:
+      email: yakovlevaev@m2.ru
+
+  - name: Отчёт по UTM-меткам
+    type: dashboard
+    url: https://datastudio.google.com/reporting/c0a1446b-a3a7-4607-aaf1-6fbce94adcb7  
+    depends_on:
+      - ref('UTM')     
+    owner:
+      email: yakovlevaev@m2.ru
