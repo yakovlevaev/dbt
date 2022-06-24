@@ -48,6 +48,14 @@ sources:
   - name: ARCHIVE
     tables:
       - name: BOT_IDS
+
+  - name: MART_TABLES
+    tables:
+      - name: EVENTS_PARSED
+  
+  - name: yakovlevaev
+    tables:
+      - name: EVENT_DICTIONARY
   
  # - name: INFORMATION_SCHEMA
  #   database: region-us
