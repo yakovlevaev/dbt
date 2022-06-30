@@ -19,7 +19,7 @@ select
     {% endfor %}
     --ifnull(count(distinct case when event = '{{event}}' then session_id end) as {{event}}_SESS
 from {{ source('MART_TABLES', 'EVENTS_PARSED') }}
-where event not IN ('NOT_PARSED', 'VISITS')
+where event not IN ('NOT_PARSED')
 group by 1,2,3--,4,5,6,7,8,9,10
 )
 
