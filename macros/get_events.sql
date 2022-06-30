@@ -3,7 +3,7 @@
 {% set events_query %}
 select english_name 
 from {{ source('yakovlevaev', 'EVENT_DICTIONARY') }}
-where english_name not in ('NOT_PARSED', 'VISITS')
+where english_name not in ('NOT_PARSED')
 {% endset %}
 
 {% set results = run_query(events_query) %}
